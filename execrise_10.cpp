@@ -422,5 +422,22 @@ int main( int argc, const char** argv )
 	//c
 	Sobel(_45_degreedline,dst	,_45_degreedline.depth(),1,0,9);
 	// the result of sobel must be something with the gradient of the input image.
+
+	//That is a kernel for a theoretic angle of 62.5 degree.
+
+	//	cv::Mat1f k = (cv::Mat1f(9,9)<<
+	//	0,0,0,0,0,0,1,0,0,
+	//	0,0,0,0,0,0,0,0,0,
+	//	0,0,0,0,0,1,0,0,0,
+	//	0,0,0,0,0,0,0,0,0,
+	//	0,0,0,0,1,0,0,0,0,
+	//	0,0,0,0,0,0,0,0,0,
+	//	0,0,0,1,0,0,0,0,0,
+	//	0,0,0,0,0,0,0,0,0,
+	//	0,0,1,0,0,0,0,0,0);
+
+
+
+
 	return 0;
 }
